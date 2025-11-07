@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
           Feel free to look around, edit the source code and navigate to the
           demos.
         </p>
+
         <Image
           src="/huji.svg"
           alt="HUJI Logo"
@@ -50,7 +52,11 @@ export default function Home() {
             <li>Donec ultrices felis vel lectus auctor iaculis.</li>
           </ul>
         </div>
-      </div>
+        <div>
+          <Link href="/tic-tac-toe">Go to Tic Tac Toe Demo</Link>
+        </div>
+
+</div>
     </main>
   );
 }
