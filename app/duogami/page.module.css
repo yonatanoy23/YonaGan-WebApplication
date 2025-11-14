@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Masada";
+  src: url("/fonts/Masada.ttf") format("truetype");
+  font-weight: 100 900;
+}
+
+.root {
+  --primary-color: #314FF8;
+  --text-color: var(--primary-color);
+  color: #314FF8;
+  background: #FFF;
+  font-family: "Masada";
+}
+
+/* --- כללי --- */
+.sectionContainer {
+  padding: 4rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* --- סגנונות טקסט --- */
+.h1 {
+  font-family: "Masada";
+  font-style: medium;
+  font-size: 90px;
+  line-height: 1;
+  text-align: center;
+  font-weight: 550;
+  color: var(--primary-color);
+}
+.h2 {
+  font-family: "Masada";
+  font-style: Book;
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+.p {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  line-height: 1.6;
+  text-align: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- כותרות סעיפים --- */
+.sectionTitleBox {
+  font-family: "Masada";
+  font-size: 64px;
+  font-weight: 550;
+  color: var(--primary-color);
+  border: 4px solid var(--primary-color);
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.1;
+}
+
+.sectionTitleLine {
+  font-family: "Masada";
+  font-size: 64px;
+  font-weight: 550;
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid var(--primary-color);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+}
+
+/* כותרת משנה (לצוות) */
+.sectionSubTitleLine {
+  font-family: "Masada";
+  font-size: 48px;
+  font-weight: 550;
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid var(--primary-color);
+  max-width: 600px;
+  margin: 3rem auto 0 auto;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+}
+
+/* --- פסקאות טקסט --- */
+.textBlock {
+  font-family: "Masada";
+  font-style: Medium;
+  font-size: 36px;
+  line-height: 55px;
+  text-align: center;
+  font-weight: 550;
+  color: var(--primary-color);
+  margin-top: 2rem;
+}
+
+.summaryBlock {
+  font-family: "Masada";
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 550;
+  color: var(--primary-color);
+  margin-top: 3rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- רשימות --- */
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto 0 auto;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.bulletItem {
+  display: flex;
+  justify-content: space-between; /* This is the fix */
+  align-items: center;
+  /* gap: 1rem;  <-- REMOVED THIS, as it conflicts with space-between */
+  text-align: right;
+  font-family: "Masada";
+  font-style: Medium;
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 550;
+}
+
+/* This targets the <span> with the text */
+.bulletItem > span:first-child {
+  text-align: right;
+  padding-left: 1rem; /* Adds space between text and dot, just in case */
+}
+
+.bulletDot {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* --- גריד 2 עמודות --- */
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Masada";
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 550;
+}
+
+.gridItemRight {
+  text-align: right;
+  font-weight: 700;
+}
+
+.gridItemLeft {
+  text-align: right;
+  font-weight: 400;
+}
+
+/* --- רכיבים ספציפיים --- */
+.hero {
+  padding: 40px 15px;
+  background: #FFF;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* רווח בין שורות הסירות לטקסט */
+}
+
+.heroContent {
+  padding: 2rem 1rem; /* הקטנתי את הפדינג העליון/תחתון כי הרווח בא מה-gap */
+  text-align: center;
+}
+
+.boatRow {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.craneImageContainer {
+  margin-top: 3rem;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  border-top: 1px solid rgba(49, 79, 248, 0.06);
+  padding: 2rem 1rem;
+  margin-top: 40px;
+}
+
+.footerContent {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.footerNav {
+  text-align: right;
+}
+
+/* --- מחלקות עזר (Utilities) --- */
+.textAlignRight {
+  text-align: right;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+
+.maxWidthLg {
+  max-width: 800px;
+}
+
+.marginTopLg {
+  margin-top: 4rem;
+}
+
+.marginTopMd {
+  margin-top: 3rem;
+}

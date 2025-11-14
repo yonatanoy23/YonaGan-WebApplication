@@ -28,21 +28,7 @@ export default function Home() {
         />
         <div>
           <h2>Lorem Ipsum</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            faucibus sit amet nunc nec vehicula. Fusce ornare nec nulla non
-            imperdiet. Fusce vel sodales justo. Sed efficitur arcu lorem, at
-            iaculis odio ultricies et. Duis rutrum urna nec elit bibendum, sed
-            hendrerit nulla posuere. Vestibulum vestibulum, ante non tincidunt
-            posuere, dui arcu lacinia nisl, nec rhoncus massa arcu ac ipsum. Nam
-            congue interdum tortor, eu dignissim massa scelerisque vitae. Sed
-            ultricies bibendum congue. Praesent non magna id ligula maximus
-            luctus. Donec vitae nibh quis neque luctus sagittis et eget nunc.
-            Aliquam id ullamcorper lacus. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Pellentesque habitant morbi tristique
-            senectus et netus et malesuada fames ac turpis egestas. Curabitur
-            tempor quis dolor a lacinia.
-          </p>
+          
           <ul>
             <li>
               Aliquam maximus tellus sed lacus venenatis, ac cursus eros mollis.
@@ -53,7 +39,13 @@ export default function Home() {
           </ul>
         </div>
         <div>
-          <Link href="/tic-tac-toe">Go to Tic Tac Toe Demo</Link>
+          <Link href="/duogami">DuoGami Page</Link>
+        </div>
+        <div>
+          <Link href="/tic-tac-toe">Tic Tac Toe</Link>
+        </div>
+        <div>
+          <Link href="/art">Art Gallery</Link> 
         </div>
 
 </div>

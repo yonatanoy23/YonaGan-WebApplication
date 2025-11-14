@@ -1,0 +1,155 @@
+
+.page {
+  min-height: 100dvh;
+  padding: 32px 20px;
+  background: var(--bg);
+  color: #e8eef8;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.header {
+  display: grid;
+  gap: 6px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.departmentName {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* Notice / errors */
+.notice {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-border);
+  color: #f1f5f9;
+}
+
+/* Responsive grid */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  box-shadow: var(--shadow);
+  transition: transform .12s ease, box-shadow .18s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 44px rgba(0,0,0,0.55);
+}
+
+/* Media area */
+.media {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(180deg, #0f1724, #081022);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* clickable media anchor */
+.mediaLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* placeholder when no image */
+.mediaPlaceholder {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #0b1220, #08101a);
+  color: var(--muted);
+}
+
+.noImage {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px dashed rgba(255,255,255,0.06);
+}
+
+/* meta area */
+.meta {
+  padding: 12px 14px 16px;
+  display: grid;
+  gap: 10px;
+}
+
+.artTitle {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.artist {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.props {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #dbe7f8;
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+.credit {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px dashed rgba(255,255,255,0.03);
+  padding-top: 8px;
+}
+
+/* small screens tweaks */
+@media (max-width: 420px) {
+  .page { padding: 20px 12px; }
+  .grid { gap: 12px; }
+  .artTitle { font-size: 0.98rem; }
+}

@@ -3,7 +3,7 @@ import { use } from "react";
 import { useState } from "react";
 import styles from "./page.module.css";
 
-function Square({ value, onSquareClick }) {
+function Square({ value, onSquareClick }: { value: string | null; onSquareClick: () => void }) {
   return (
     <button className={styles.square} onClick={onSquareClick} data-value={value}>
       {value}
@@ -15,7 +15,7 @@ function Square({ value, onSquareClick }) {
 export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
-  function handleClick(i) {
+  function handleClick(i: number) {
     if (squares[i] || calculateWinner(squares)) {
       return;
     }
