@@ -615,21 +615,21 @@ export default function DuoGamiPage() {
 
       <main className={styles.root}>
         <Hero />
-        <The_Team />
+        {/* <The_Team /> */}
         <About />
         <CoreValues />
         <Categories />
         <Background />
-        <MarketApps />
-        <TargetAudience />
-        <MoreInfo />
-        <ContentStrategy />
-        <DesignLanguage />
-        <References />
-        <DesignComponents />
-        <Technology />
-        <Personalization />
-        <Challenges />
+        {/* <MarketApps /> */}
+        {<TargetAudience />}
+        {/* <MoreInfo /> */}
+        {/* <ContentStrategy /> */}
+        {/* <DesignLanguage /> */}
+        {/* <References /> */}
+        {/* <DesignComponents /> */}
+        {/* <Technology /> */}
+        {/* <Personalization /> */}
+        {/* <Challenges /> */}
         <Footer />
       </main>
     </>
