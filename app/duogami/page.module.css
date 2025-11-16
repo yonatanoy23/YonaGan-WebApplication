@@ -10,9 +10,11 @@
   color: #314FF8;
   background: #FFF;
   font-family: "Masada";
+  max-width: 500px; 
+  margin: 0 auto; 
 }
 
-/* --- כללי --- */
+/* --- General --- */
 .sectionContainer {
   padding: 4rem 1rem;
   max-width: 900px;
@@ -20,7 +22,7 @@
   text-align: center;
 }
 
-/* --- סגנונות טקסט --- */
+/* --- Typography --- */
 .h1 {
   font-family: "Masada";
   font-style: medium;
@@ -51,7 +53,7 @@
   margin-right: auto;
 }
 
-/* --- כותרות סעיפים --- */
+/* --- Section Titles --- */
 .sectionTitleBox {
   font-family: "Masada";
   font-size: 64px;
@@ -77,21 +79,7 @@
   letter-spacing: 0.1em;
 }
 
-/* כותרת משנה (לצוות) */
-.sectionSubTitleLine {
-  font-family: "Masada";
-  font-size: 48px;
-  font-weight: 550;
-  color: var(--primary-color);
-  padding-bottom: 0.5rem;
-  border-bottom: 4px solid var(--primary-color);
-  max-width: 600px;
-  margin: 3rem auto 0 auto;
-  line-height: 1.2;
-  letter-spacing: 0.1em;
-}
-
-/* --- פסקאות טקסט --- */
+/* --- Text Blocks --- */
 .textBlock {
   font-family: "Masada";
   font-style: Medium;
@@ -103,21 +91,7 @@
   margin-top: 2rem;
 }
 
-.summaryBlock {
-  font-family: "Masada";
-  font-style: Medium;
-  font-size: 24px;
-  line-height: 1.6;
-  text-align: center;
-  font-weight: 550;
-  color: var(--primary-color);
-  margin-top: 3rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* --- רשימות --- */
+/* --- Lists --- */
 .bulletList {
   list-style: none;
   padding: 0;
@@ -130,21 +104,21 @@
 
 .bulletItem {
   display: flex;
-  justify-content: space-between; /* This is the fix */
+  flex-direction: row-reverse;  /* This flips the visual order */
+  justify-content: flex-start; /* This aligns the items to the right in RTL */
   align-items: center;
-  /* gap: 1rem;  <-- REMOVED THIS, as it conflicts with space-between */
+  gap: 1rem;                   /* This adds space between the dot and text */
   text-align: right;
   font-family: "Masada";
   font-style: Medium;
   font-size: 28px;
   line-height: 1.4;
   font-weight: 550;
+  margin-left: auto; /* Pushes the item to the right */
 }
 
-/* This targets the <span> with the text */
 .bulletItem > span:first-child {
   text-align: right;
-  padding-left: 1rem; /* Adds space between text and dot, just in case */
 }
 
 .bulletDot {
@@ -155,7 +129,7 @@
   flex-shrink: 0;
 }
 
-/* --- גריד 2 עמודות --- */
+/* --- 2 Column Grid --- */
 .twoColumnGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -181,7 +155,7 @@
   font-weight: 400;
 }
 
-/* --- רכיבים ספציפיים --- */
+/* --- Specific Components --- */
 .hero {
   padding: 40px 15px;
   background: #FFF;
@@ -189,11 +163,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem; /* רווח בין שורות הסירות לטקסט */
+  gap: 1.5rem;
 }
 
 .heroContent {
-  padding: 2rem 1rem; /* הקטנתי את הפדינג העליון/תחתון כי הרווח בא מה-gap */
+  padding: 2rem 1rem;
   text-align: center;
 }
 
@@ -204,24 +178,28 @@
   width: 100%;
 }
 
+/* --- סגנון שהוחזר --- */
 .craneImageContainer {
   margin-top: 3rem;
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
 }
+/* --- סוף סגנון שהוחזר --- */
+
 
 .footer {
   border-top: 1px solid rgba(49, 79, 248, 0.06);
   padding: 2rem 1rem;
   margin-top: 40px;
+  align-self: center;
 }
 
 .footerContent {
-  max-width: 1100px;
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 12px;
   align-items: center;
 }
@@ -230,7 +208,7 @@
   text-align: right;
 }
 
-/* --- מחלקות עזר (Utilities) --- */
+/* --- Utility Classes --- */
 .textAlignRight {
   text-align: right;
 }

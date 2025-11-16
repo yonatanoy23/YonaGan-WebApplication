@@ -16,7 +16,7 @@ function Hero() {
     <section className={styles.hero} aria-label="Hero">
       <BoatRow />
       <div className={styles.heroContent}>
-        <h1 className={styles.h1}>DoaGami</h1>
+        <h1 className={styles.h1}>DuoGami</h1>
         <p className={styles.h2}>Fold. Learn. Create.</p>
         <p className={styles.h2}>Step by Step</p>
       </div>
@@ -99,32 +99,6 @@ function Background() {
   );
 }
 
-// רכיב "אפליקציות בשוק"
-function MarketApps() {
-  const items = [
-    "מיושנות",
-    "מבוססות על מדריכים",
-    "טקסטואליים/תרשימים בלבד",
-    "לא אינטואיטיביות",
-    "אינן מנצלות את היכולות של בינה מלאכותית",
-    "לא קיים אלמנט קהילתי",
-  ];
-
-  return (
-    <section id="market" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleLine}>ה א פ ל י ק צ י ו ת<br/>ב ש ו ק</h2>
-      <ul className={styles.bulletList}>
-        {items.map((item, index) => (
-          <li key={index} className={styles.bulletItem}>
-            <span>{item}</span>
-            <span className={styles.bulletDot}></span>
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
 // רכיב TargetAudience
 function TargetAudience() {
   const characteristics = [
@@ -195,110 +169,6 @@ function CoreValues() {
   );
 }
 
-// רכיב MoreInfo
-function MoreInfo() {
-  return (
-    <section id="moreInfo" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>מידע נוסף</h2>
-      
-      <h3 className={`${styles.sectionTitleLine} ${styles.marginTopLg}`}>
-        מ ה א נ ח נ ו<br/>ב ו נ י ם ؟
-      </h3>
-      <p className={styles.textBlock}>
-        אפליקציה שבאה ללמד אנשים לעשות
-        <br />
-        אוריגאמי בכל רמה בין אם הם מתחילים או
-        <br />
-        עם רקע. היא מציעה שיעורים שבכל אחד
-        <br />
-        ניתן לבנות צורה אחרת באמצעות סרטון
-        <br />
-        הדרכה וליווי של בינה מלאכותית מותאמת
-        <br />
-        למשתמש לפי ההיסטוריית שימוש שלו
-        <br />
-        באפליקציה.
-        <br />
-        הצורות יתחלקו לקטגוריות ולדרג קושי כדי
-        <br />
-        שכל משתמש יוכל לבחור בעצמו אם הוא
-        <br />
-        רוצה להתקדם ליצירות יותר מורכבות או
-        <br />
-        להמשיך להתאמן על יצירות באותו הקושי
-        <br />
-        כדי להתאמן.
-      </p>
-
-      <h3 className={`${styles.sectionTitleLine} ${styles.marginTopLg}`}>
-        מ ה א נ ח נ ו<br/>ל א ב ו נ י ם ؟
-      </h3>
-      <p className={styles.textBlock}>
-        מספר הקטגוריות והפריטים בכל קטגוריה
-        <br />
-        הוא סופי - המשתמש לא יכול להזין שם של
-        <br />
-        יצירה אותה הוא רוצה ליצור והכרח
-        <br />
-        למצוא אותה במאגר.
-        <br />
-        אפליקציה שקיפולי האוריגמי בה נעשים
-        <br />
-        באמצעות מסך המגע ולא באמצעות דף
-        <br />
-        שהמשתמש מביא איתו.
-      </p>
-    </section>
-  );
-}
-
-// רכיב ContentStrategy
-function ContentStrategy() {
-  return (
-    <section id="content" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleLine}>ת ו כ ן ו מ י ד ע</h2>
-      <p className={`${styles.textBlock} ${styles.textAlignRight} ${styles.maxWidthLg}`}>
-        תחילה, צוות המוצר יאסוף מספר רב של
-        תכני אוריגאמי ויסווג אותם לקטגוריות.
-        כאשר בכל קטגוריה יש מספר אפשרויות
-        לאוריגאמי לפי רמות קושי. למשל
-        קטגוריית בעלי חיים אשר תכיל - חתול,
-        כלב, דולפין, ארמדילו, גמל שלמה, מרבה
-        רגליים. התוכן יתעדכן אחת לשבוע - צוות
-        המוצר יסיר תוכן שאינו רלוונטי ויוסיף
-        תכנים חדשים בהתאם לביקוש אצל
-        כל קטגוריה.
-        <br />
-        מאגר האפשרויות גדל עם הזמן, מתווספות
-        עוד ועוד אפשרויות למשתמש אותן הוא
-        יוכל לבחור לתרגל/ליצור. כלומר עבור כל
-        קטגוריה המאגר גדל. התוכן נוצר על ידי
-        צוות המוצר האחראי על מציאת הרעיונות
-        לאפשרויות אוריגאמי חדשות והנגשתו
-        באפליקציה. על צוות המוצר לאבחן תוך
-        כדי השימוש אילו יצירות המשתמש
-        מרוצה יותר ואילו פחות ובהתאם לכך
-        להתאים את התוכן במוצר.
-        <br />
-        המידע היחידי אשר יהיה זקוק לאבטחה
-        הינו אמצעי וביצוע התשלום עבור
-        משתמשים אשר רכשו חבילת תוכן גדולה
-        יותר (מודל פרימיום). כמו כן, המוצר
-        ישמור על פרטיות המשתמש באשר ליצירות
-        אותן הוא ביצע.
-        <br />
-        לא נדרש שילוב של תוכן ממקורות אחרים,
-        לכל יצירה שצוות המוצר ירצה להוסיף
-        למאגר הוא יצטרך לדעת את ההנחיות
-        המתאימות ליצירה ולהמיר אותן
-        לאפליקקציה - כלומר להוסיף את סדר
-        הפעולות המתאים + אנימציה/סרטון
-        רלוונטי/ת המסביר/ה כיצד לבצע כל קיפול.
-      </p>
-    </section>
-  );
-}
-
 // רכיב Categories
 function Categories() {
   const categories = [
@@ -328,180 +198,7 @@ function Categories() {
   );
 }
 
-// רכיב DesignLanguage
-function DesignLanguage() {
-  return (
-    <section id="design" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>שפה עיצובית</h2>
-      <p className={styles.textBlock}>
-        האפליקציה שואפת להפוך
-        <br />
-        את אמנות האוריגמי לחוויה
-        <br />
-        עכשווית, נגישה ומרגשת.
-        <br />
-        העיצוב הגרפי הוא כלי
-        <br />
-        מרכזי בהעברת הערכים
-        <br />
-        האלה: שילוב בין מסורת
-        <br />
-        ודייקן לבין חדשנות, רוגע
-        <br />
-        והתפתחות אישית.
-        <br />
-        בעזרת שפה חזותית נקייה,
-        <br />
-        צבעוניות רגועה ואלמנטים
-        <br />
-        יפניים, אנו יוצרים חיבור
-        <br />
-        בין עולם האוריגמי הקלאסי
-        <br />
-        לבין סביבה דיגיטלית
-        <br />
-        עכשווית שמעודדת סבלנות,
-        <br />
-        קהילה ויצירה.
-      </p>
-    </section>
-  );
-}
-
-// רכיב References
-function References() {
-  const references = [
-    { title: "יפן", items: "פשטות, איזון, וחיבור לטבע." },
-    { title: "מינימליזם", items: "שימוש בחלל ריק, קווים עדינים וצבעוניות מאופקת המדגישה את התוכן ולא משתלטת עליו." },
-    { title: "תרבות הפנאי ומלאכות ישנות", items: "עבודות יד, המעבירות את רעיון היצירה האישית והמדיטטיבית." },
-    { title: "פיתוח עצמי וקידום אישי", items: "הדגשת התהליך ולא רק התוצאה, כל קיפול הוא צעד בלמידה ובהתפתחות." },
-  ];
-
-  return (
-    <section id="references" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleLine}>ר פ ר נ ס י ם</h2>
-      <div className={styles.twoColumnGrid}>
-        {references.map((ref, index) => (
-          <React.Fragment key={index}>
-            <div className={styles.gridItemRight}>
-              <strong>{ref.title}</strong>
-            </div>
-            <div className={styles.gridItemLeft}>
-              {ref.items}
-            </div>
-          </React.Fragment>
-        ))}
-      </div>
-      <p className={styles.summaryBlock}>
-        יצאנו לחקר מתוך חשיבה על עולמות של
-        <br />
-        תרבות הפנאי, הזרם של מלאכות ישנות
-        <br />
-        לתרבות, לקחנו השראה מתוך התרבות
-        <br />
-        היפנית ומעיצוב מינימליסטי מתוך מחשבה
-        <br />
-        על חידוש מסורת ישנה וליצור שפה
-        <br />
-        עיצובית שהיא מודרנית. אנחנו תופסים
-        <br />
-        מהמשתמשים אנשים חושבים ועצמאיים
-        <br />
-        שאוהבים את הנוסטלגיה ובאותה נשימה
-        <br />
-        נלהבים מהחדשנות ונתנו את האופציה
-        <br />
-        של שימוש עזר בAI.
-      </p>
-    </section>
-  );
-}
-
-// רכיב DesignComponents
-function DesignComponents() {
-  const components = [
-    { title: "עיצוב מינימליסטי", items: "הכחול בא להעביר תחושת חדשנות, מתוך המלאכה אנחנו יוצרים משהו טרנדי. ליצור מרחב של שקט והתפתחות בתוך סט אפ שנותן תחושת שייכות וחדשנות, קווים פשוטים ונקיים." },
-    { title: "איורים", items: "איורי אוריגמי פשוטים." },
-    { title: "לוגו", items: "טיפוגרפי, שם המוצר." },
-  ];
-
-  return (
-    <section id="components" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleLine}>ר כ י ב י ם</h2>
-      <div className={styles.twoColumnGrid}>
-        {components.map((comp, index) => (
-          <React.Fragment key={index}>
-            <div className={styles.gridItemRight}>
-              <strong>{comp.title}</strong>
-            </div>
-            <div className={styles.gridItemLeft}>
-              {comp.items}
-            </div>
-          </React.Fragment>
-        ))}
-      </div>
-    </section>
-  );
-}
-
-// רכיב Technology
-function Technology() {
-  return (
-    <section id="tech" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>טכנולוגיה</h2>
-      <p className={styles.textBlock}>
-        הדאטה שאיתו נעבוד יהיה
-        <br />
-        רשימת לומדים
-        <br />
-        (משתמשים), דגמי אוריגמי
-        <br />
-        ושלבים ללמידה ותרגול
-        <br />
-        ומיומנות קיפול. בנוסף
-        <br />
-        נשתמש במיומנויות קיפול
-        <br />
-        ותרגילים כדי לעקוב אחרי
-        <br />
-        ההתקדמות של
-        <br />
-        כל משתמש.
-      </p>
-    </section>
-  );
-}
-
-// רכיב Personalization
-function Personalization() {
-  return (
-    <section id="personalization" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>מערכת התאמה אישית</h2>
-      <p className={`${styles.textBlock} ${styles.textAlignRight} ${styles.maxWidthLg}`}>
-        נצטרך לממש אלגוריתם
-        מורכב שתפקידו לבנות
-        מסלול למידה אופטימלי
-        לכל משתמש. האלגוריתם
-        יזהה את המיומנויות שבהן
-        המשתמש חלש, או
-        מיומנויות שבהן
-        ירידה בשליטה על בסיס
-        ציון ותאריך הלימוד
-        האחרון, וישבץ באופן דינמי
-        דגמי אוריגמי, או משפטי
-        תרגול ממוקדים (למשל:
-        תרגל את קיפול העמק)
-        שמטרתם לחזק בדיוק את
-        אותן המיומנויות החלשות,
-        תוך הבטחה שהמשתמש
-        עומד בדרישות הקדם של
-        מיומנויות חדשות
-        שנלמדות.
-      </p>
-    </section>
-  );
-}
-
+// --- רכיב שהוחזר ---
 // רכיב Challenges
 function Challenges() {
   const items = [
@@ -527,67 +224,8 @@ function Challenges() {
     </section>
   );
 }
+// --- סוף רכיב שהוחזר ---
 
-// רכיב The_Team
-function The_Team() {
-  const designTeam = [
-    { name: "אניה רובינשטיין", role: "כתיבה" },
-    { name: "שחר בן שמואל", role: "חווית UX" },
-    { name: "רומי באוך", role: "טיפוגרפיה" },
-    { name: "אביה דרווין", role: "סידור וניהול הפרויקט" },
-  ];
-  const devTeam = [
-    { name: "יונתן גן", role: "פרונט" },
-    { name: "נדב נבון", role: "בק אנד" },
-    { name: "יובל רוזנטל", role: "פול סטאק" },
-  ];
-  const consultants = [
-    { name: "אילן גריבי", role: "אמן אוריגמי ומעצב, מייסד-שותף ומנכ\"ל ארגון \"אוריגמישראל\"" },
-    { name: "פרופ' אביב גודז'ין", role: "ראיה ממוחשבת" },
-  ];
-
-  return (
-    <section id="team" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>צוות המוצר</h2>
-      
-      <h3 className={styles.sectionSubTitleLine}>
-        צוות העיצוב
-      </h3>
-      <div className={styles.twoColumnGrid}>
-        {designTeam.map((member, index) => (
-          <React.Fragment key={index}>
-            <div className={styles.gridItemRight}>{member.name}</div>
-            <div className={styles.gridItemLeft}>{member.role}</div>
-          </React.Fragment>
-        ))}
-      </div>
-
-      <h3 className={styles.sectionSubTitleLine}>
-        צוות התכנות
-      </h3>
-      <div className={styles.twoColumnGrid}>
-        {devTeam.map((member, index) => (
-          <React.Fragment key={index}>
-            <div className={styles.gridItemRight}>{member.name}</div>
-            <div className={styles.gridItemLeft}>{member.role}</div>
-          </React.Fragment>
-        ))}
-      </div>
-
-      <h3 className={styles.sectionSubTitleLine}>
-        יעוצים<br/>חיצוניים
-      </h3>
-      <div className={styles.twoColumnGrid}>
-        {consultants.map((member, index) => (
-          <React.Fragment key={index}>
-            <div className={styles.gridItemRight}>{member.name}</div>
-            <div className={styles.gridItemLeft}>{member.role}</div>
-          </React.Fragment>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 // רכיב Footer
 function Footer() {
@@ -615,21 +253,12 @@ export default function DuoGamiPage() {
 
       <main className={styles.root}>
         <Hero />
-        {/* <The_Team /> */}
         <About />
         <CoreValues />
         <Categories />
         <Background />
-        {/* <MarketApps /> */}
-        {<TargetAudience />}
-        {/* <MoreInfo /> */}
-        {/* <ContentStrategy /> */}
-        {/* <DesignLanguage /> */}
-        {/* <References /> */}
-        {/* <DesignComponents /> */}
-        {/* <Technology /> */}
-        {/* <Personalization /> */}
-        {/* <Challenges /> */}
+        <TargetAudience />
+        <Challenges /> {/* <-- הוספתי בחזרה */}
         <Footer />
       </main>
     </>

@@ -1,7 +1,9 @@
-.game{
-  min-height: 100dvh;
-  display: grid;
-  place-items: center;
+/* --- UPDATED --- */
+.main{
+  /* min-height: 100dvh; <-- REMOVED this to fix footer gap */
+  display: flex; /* <-- ADDED */
+  flex-direction: column; /* <-- ADDED */
+  align-items: center; /* <-- ADDED */
   padding: 24px;
   background: var(--bg);
   color: var(--text);
@@ -24,6 +26,10 @@
   border-radius: 20px;
   box-shadow: var(--shadow);
   padding: 18px;
+  /* Added flex layout to center the new button */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .status{
@@ -35,6 +41,7 @@
   border-radius: 12px;
   margin-bottom: 14px;
   color: var(--muted);
+  width: 100%; /* Make status bar fill width */
 }
 
 /* 3×3 grid */
@@ -42,6 +49,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  width: 100%; /* Make grid fill width */
 }
 
 /* squares (buttons) */
@@ -61,7 +69,6 @@
   transition:
     transform .08s ease,
     box-shadow .15s ease,
-    background .2s ease,
     border-color .2s ease,
     color .2s ease;
   box-shadow: 0 6px 14px rgba(0,0,0,.15);
@@ -85,7 +92,6 @@
   box-shadow: 0 0 0 3px rgba(255,255,255,.25);
 }
 
-/* Subtle color cue: X vs O */
 .square[data-value="X"]{
   color: var(--x);
   text-shadow: 0 2px 12px rgba(255,107,107,.35);
@@ -95,4 +101,21 @@
   text-shadow: 0 2px 12px rgba(76,212,176,.38);
 }
 
+/* --- NEW RESET BUTTON STYLE --- */
+.resetButton {
+  margin-top: 18px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  background: rgba(255,255,255,.1);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color .2s ease, transform .2s ease;
+}
 
+.resetButton:hover {
+  background: rgba(255,255,255,.2);
+  transform: translateY(-2px);
+}

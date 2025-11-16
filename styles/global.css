@@ -164,7 +164,7 @@ fieldset {
   height: 2rem;
   color: white;
   border: none;
-  border-radius: 1000px; /* Make the button round */
+  border-radius: 1000px;
   cursor: pointer;
   font-weight: bold;
 
