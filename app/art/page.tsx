@@ -59,7 +59,7 @@ async function fetchJSON(url: string, timeoutMs = 9000): Promise<any | null> {
   }
 }
 
-export async function getArtData(departmentId: string, count: number): Promise<MetObject[]> {
+async function getArtData(departmentId: string, count: number): Promise<MetObject[]> {
   const base = "https://collectionapi.metmuseum.org/public/collection/v1";
 
   const searchUrl = `${base}/search?hasImages=true&departmentId=${encodeURIComponent(departmentId)}&q=*`;
@@ -96,7 +96,6 @@ async function fetchObjectsRandomly(objectIDs: number[], count: number, baseApi:
         if (obj) {
           results[idx] = obj as MetObject;
         } else {
-          // insert a placeholder minimal object to keep indices aligned
           results[idx] = {
             objectID: id,
             title: "Unknown (failed to fetch)",

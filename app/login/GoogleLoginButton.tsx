@@ -26,7 +26,7 @@ const GoogleLoginButton = () => {
       });
       location.reload();
     };
-  }, [supabase.auth]); // <-- THE FIX IS HERE
+  }, [supabase.auth]); 
 
   // You can customize the button here:
   // https://developers.google.com/identity/gsi/web/tools/configurator
