@@ -7,9 +7,9 @@ import Image from "next/image";
 function Hero() {
   const BoatRow = () => (
     <div className={styles.boatRow}>
-      <Image src="/boat.svg" alt="Origami boat 1" width={120} height={60} />
-      <Image src="/boat.svg" alt="Origami boat 2" width={120} height={60} />
-      <Image src="/boat.svg" alt="Origami boat 3" width={120} height={60} />
+      <Image src="./boat.svg" alt="Origami boat 1" width={120} height={60} />
+      <Image src="./boat.svg" alt="Origami boat 2" width={120} height={60} />
+      <Image src="./boat.svg" alt="Origami boat 3" width={120} height={60} />
     </div>
   );
   return (
@@ -219,7 +219,7 @@ function Challenges() {
         ))}
       </ul>
       <div className={styles.craneImageContainer}>
-        <Image src="/crane.png" alt="Origami crane" width={300} height={200} style={{width: '100%', height: 'auto'}} />
+        <Image src="./crane.png" alt="Origami crane" width={300} height={200} style={{width: '100%', height: 'auto'}} />
       </div>
     </section>
   );
