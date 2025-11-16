@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import React from "react";
 import Image from "next/image";
 
-// רכיב Hero - תוקן מבנית
 function Hero() {
   const BoatRow = () => (
     <div className={styles.boatRow}>
@@ -224,7 +223,6 @@ function Challenges() {
     </section>
   );
 }
-// --- סוף רכיב שהוחזר ---
 
 
 // רכיב Footer
@@ -258,7 +256,7 @@ export default function DuoGamiPage() {
         <Categories />
         <Background />
         <TargetAudience />
-        <Challenges /> {/* <-- הוספתי בחזרה */}
+        <Challenges /> 
         <Footer />
       </main>
     </>

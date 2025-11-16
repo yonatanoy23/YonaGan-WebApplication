@@ -1,15 +1,43 @@
 @font-face {
   font-family: "Masada";
-  src: url("/fonts/Masada.ttf") format("truetype");
-  font-weight: 100 900;
+  src: url("/fonts/Masada-Book.woff2") format("woff2");
+  font-weight: 400; /* Book */
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: "Masada";
+  src: url("/fonts/Masada-Medium.woff2") format("woff2");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Masada";
+  src: url("/fonts/Masada-Demi.woff2") format("woff2");
+  font-weight: 600; /* Demi */
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Masada";
+  src: url("/fonts/Masada-Bold.woff2") format("woff2");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 .root {
   --primary-color: #314FF8;
   --text-color: var(--primary-color);
   color: #314FF8;
   background: #FFF;
-  font-family: "Masada";
+  font-family: "Masada", sans-serif;
   max-width: 500px; 
   margin: 0 auto; 
 }
@@ -24,21 +52,19 @@
 
 /* --- Typography --- */
 .h1 {
-  font-family: "Masada";
-  font-style: medium;
+  font-family: "Masada", sans-serif;
   font-size: 90px;
   line-height: 1;
   text-align: center;
-  font-weight: 550;
+  font-weight: 500; 
   color: var(--primary-color);
 }
 .h2 {
-  font-family: "Masada";
-  font-style: Book;
+  font-family: "Masada", sans-serif;
   font-size: 32px;
   line-height: 1.2;
   text-align: center;
-  font-weight: 400;
+  font-weight: 400; 
   color: var(--primary-color);
   margin-top: 1rem;
 }
@@ -51,13 +77,14 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  font-weight: 400; 
 }
 
 /* --- Section Titles --- */
 .sectionTitleBox {
-  font-family: "Masada";
+  font-family: "Masada", sans-serif;
   font-size: 64px;
-  font-weight: 550;
+  font-weight: 600; 
   color: var(--primary-color);
   border: 4px solid var(--primary-color);
   padding: 1rem;
@@ -67,9 +94,9 @@
 }
 
 .sectionTitleLine {
-  font-family: "Masada";
+  font-family: "Masada", sans-serif;
   font-size: 64px;
-  font-weight: 550;
+  font-weight: 600;
   color: var(--primary-color);
   padding-bottom: 0.5rem;
   border-bottom: 4px solid var(--primary-color);
@@ -81,12 +108,11 @@
 
 /* --- Text Blocks --- */
 .textBlock {
-  font-family: "Masada";
-  font-style: Medium;
+  font-family: "Masada", sans-serif;
   font-size: 36px;
   line-height: 55px;
   text-align: center;
-  font-weight: 550;
+  font-weight: 500; 
   color: var(--primary-color);
   margin-top: 2rem;
 }
@@ -104,17 +130,16 @@
 
 .bulletItem {
   display: flex;
-  flex-direction: row-reverse;  /* This flips the visual order */
-  justify-content: flex-start; /* This aligns the items to the right in RTL */
+  flex-direction: row-reverse;  
+  justify-content: flex-start; 
   align-items: center;
-  gap: 1rem;                   /* This adds space between the dot and text */
+  gap: 1rem;                   
   text-align: right;
-  font-family: "Masada";
-  font-style: Medium;
+  font-family: "Masada", sans-serif;
   font-size: 28px;
   line-height: 1.4;
-  font-weight: 550;
-  margin-left: auto; /* Pushes the item to the right */
+  font-weight: 500; 
+  margin-left: auto; 
 }
 
 .bulletItem > span:first-child {
@@ -138,21 +163,20 @@
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Masada";
-  font-style: Medium;
+  font-family: "Masada", sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  font-weight: 550;
+  font-weight: 500; 
 }
 
 .gridItemRight {
   text-align: right;
-  font-weight: 700;
+  font-weight: 700; 
 }
 
 .gridItemLeft {
   text-align: right;
-  font-weight: 400;
+  font-weight: 400; 
 }
 
 /* --- Specific Components --- */
@@ -185,8 +209,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* --- סוף סגנון שהוחזר --- */
-
 
 .footer {
   border-top: 1px solid rgba(49, 79, 248, 0.06);
