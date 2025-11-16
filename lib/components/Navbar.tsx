@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header id="navbar">
       <h1>
-        <Link href="/">Yona's Website</Link>
+        <Link href="/">Yona&apos;s Website</Link>
       </h1>
       <nav>
         <Link href="/">Home</Link>
