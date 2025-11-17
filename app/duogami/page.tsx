@@ -2,6 +2,33 @@ import Head from "next/head";
 import styles from "./page.module.css";
 import React from "react";
 import Image from "next/image";
+import localFont from 'next/font/local';
+
+const masada = localFont({
+  src: [
+    {
+      path: "../fonts/Masada-Book.woff2",
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: "../fonts/Masada-Medium.woff2",
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: "../fonts/Masada-Demi.woff2",
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: "../fonts/Masada-Bold.woff2",
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-masada',
+});
 
 function Hero() {
   const BoatRow = () => (
@@ -24,7 +51,6 @@ function Hero() {
   );
 }
 
-// רכיב About
 function About() {
   return (
     <section id="about" className={styles.sectionContainer} dir="rtl">
@@ -52,7 +78,6 @@ function About() {
   );
 }
 
-// רכיב Background
 function Background() {
   return (
     <section id="background" className={styles.sectionContainer} dir="rtl">
@@ -98,7 +123,6 @@ function Background() {
   );
 }
 
-// רכיב TargetAudience
 function TargetAudience() {
   const characteristics = [
     "גילאי 10+",
@@ -143,7 +167,6 @@ function TargetAudience() {
   );
 }
 
-// רכיב "ערכים מרכזיים"
 function CoreValues() {
   const values = [
     "חווית למידה דרך אתגרים ומשחקים (Gamification)",
@@ -168,7 +191,6 @@ function CoreValues() {
   );
 }
 
-// רכיב Categories
 function Categories() {
   const categories = [
     { title: "בעלי חיים", items: "ציפורים, דגים, חרקים, יונקים, זוחלים וכו'." },
@@ -197,8 +219,6 @@ function Categories() {
   );
 }
 
-// --- רכיב שהוחזר ---
-// רכיב Challenges
 function Challenges() {
   const items = [
     "בעיה אפשרית אחת היא הוספת תוכן תמידית על מנת לשמור את המשתמשים הנוכחים מעוניינים במוצר.",
@@ -224,8 +244,6 @@ function Challenges() {
   );
 }
 
-
-// רכיב Footer
 function Footer() {
   return (
     <footer className={styles.footer}>
@@ -240,7 +258,6 @@ function Footer() {
   );
 }
 
-// הרכבת העמוד הראשי
 export default function DuoGamiPage() {
   return (
     <>
@@ -248,8 +265,7 @@ export default function DuoGamiPage() {
         <title>DuoGami — Fold. Learn. Create.</title>
         <meta name="description" content="DuoGami — learn origami with step-by-step lessons and AI guidance" />
       </Head>
-
-      <main className={styles.root}>
+      <main className={`${styles.root} ${masada.variable}`}>
         <Hero />
         <About />
         <CoreValues />
