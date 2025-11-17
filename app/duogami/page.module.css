@@ -4,7 +4,7 @@
   color: #314FF8;
   background: #FFF;
   font-family: var(--font-masada), sans-serif;
-  max-width: 500px; 
+  max-width: 440px; 
   margin: 0 auto; 
 }
 
@@ -17,8 +17,9 @@
 
 .h1 {
   font-family: var(--font-masada), sans-serif;
+  font-style: 'Medium';
   font-size: 90px;
-  line-height: 1;
+  line-height: 64px;
   text-align: center;
   font-weight: 500; 
   color: var(--primary-color);
@@ -26,15 +27,32 @@
 .h2 {
   font-family: var(--font-masada), sans-serif;
   font-size: 32px;
-  line-height: 1.2;
+  line-height: 36px;
   text-align: center;
   font-weight: 400; 
   color: var(--primary-color);
-  margin-top: 1rem;
+  letter-spacing: 0px;
+}
+
+/* --- UPDATED HEBREW HEADER --- */
+.h2_hebrew {
+  font-family: var(--font-masada), sans-serif;
+  font-style: 'Demi';
+  font-size: 42px;
+  line-height: 54px;
+  text-align: center;
+  font-weight: 450; 
+  letter-spacing: 15px;
+  color: var(--primary-color);
+  direction: rtl;
+  display: inline-block;
+  border-bottom: 4px solid var(--primary-color);
+  padding-bottom: 0.5rem;
 }
 
 .p {
   font-size: 1.5rem;
+  font-style: 'Medium';
   color: var(--primary-color);
   line-height: 1.6;
   text-align: center;
@@ -44,7 +62,6 @@
   font-weight: 400; 
 }
 
-/* --- Section Titles --- */
 .sectionTitleBox {
   font-family: var(--font-masada), sans-serif;
   font-size: 64px;
@@ -98,8 +115,9 @@
   gap: 1rem;                   
   text-align: right;
   font-family: var(--font-masada), sans-serif;
-  font-size: 28px;
-  line-height: 1.4;
+  font-size: 24px;
+  font-style: 'Book';
+  line-height: 34px;
   font-weight: 500; 
   margin-left: auto; 
 }
@@ -127,7 +145,7 @@
   font-family: var(--font-masada), sans-serif;
   font-size: 24px;
   line-height: 1.5;
-  font-weight: 500; 
+  font-weight: 400; 
 }
 
 .gridItemRight {
@@ -141,7 +159,7 @@
 }
 
 .hero {
-  padding: 40px 15px;
+  padding: 8px 10px;
   background: #FFF;
   text-align: center;
   display: flex;

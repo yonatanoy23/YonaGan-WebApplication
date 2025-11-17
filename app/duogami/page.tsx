@@ -8,23 +8,19 @@ const masada = localFont({
   src: [
     {
       path: "../fonts/Masada-Book.woff2",
-      weight: '400',
-      style: 'normal',
+      style: 'Book',
     },
     {
       path: "../fonts/Masada-Medium.woff2",
-      weight: '500',
-      style: 'normal',
+      style: 'Medium',
     },
     {
       path: "../fonts/Masada-Demi.woff2",
-      weight: '600',
-      style: 'normal',
+      style: 'Demi',
     },
     {
       path: "../fonts/Masada-Bold.woff2",
-      weight: '700',
-      style: 'normal',
+      style: 'Bold',
     },
   ],
   variable: '--font-masada',
@@ -54,7 +50,7 @@ function Hero() {
 function About() {
   return (
     <section id="about" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>מי אנחנו?</h2>
+      <h2 className={styles.h2_hebrew}>מי אנחנו?</h2>
       <p className={styles.textBlock}>
         DuoGami זו אפליקציה
         <br />
@@ -81,7 +77,7 @@ function About() {
 function Background() {
   return (
     <section id="background" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>רקע, מניעים ומטרות</h2>
+      <h2 className={styles.h2_hebrew}>רקע, מניעים ומטרות</h2>
       <p className={styles.textBlock}>
         אמנות האוריגאמי מצריכה
         <br />
@@ -133,7 +129,7 @@ function TargetAudience() {
 
   return (
     <section id="audience" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>קהל היעד</h2>
+      <h2 className={styles.h2_hebrew}>קהל היעד</h2>
       <p className={styles.textBlock}>
         האפליקציה מיועדת לילדים
         <br />
@@ -151,8 +147,7 @@ function TargetAudience() {
         <br />
         ריכוז ולהירגע.
       </p>
-      
-      <h2 className={`${styles.sectionTitleLine} ${styles.marginTopLg}`}>
+            <h2 className={`${styles.h2_hebrew} ${styles.marginTopLg}`}>
         מאפיינים<br/>כלליים
       </h2>
       <ul className={styles.bulletList}>
@@ -178,7 +173,9 @@ function CoreValues() {
 
   return (
     <section id="values" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleLine}>ע ר כ י ם<br/>מ ר כ ז י י ם</h2>
+      <h2 className={styles.h2_hebrew}>ערכים</h2>
+      <br />
+      <h2 className={styles.h2_hebrew}>מרכזיים</h2>
       <ul className={styles.bulletList}>
         {values.map((item, index) => (
           <li key={index} className={styles.bulletItem}>
@@ -202,7 +199,7 @@ function Categories() {
 
   return (
     <section id="categories" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleLine}>קטגוריות</h2>
+      <h2 className={styles.h2_hebrew}>קטגוריות</h2>
       <div className={styles.twoColumnGrid}>
         {categories.map((cat, index) => (
           <React.Fragment key={index}>
@@ -228,7 +225,7 @@ function Challenges() {
 
   return (
     <section id="challenges" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.sectionTitleBox}>בעיות, חששות ושאלות פתוחות</h2>
+      <h2 className={styles.h2_hebrew}>בעיות, חששות ושאלות פתוחות</h2>
       <ul className={`${styles.bulletList} ${styles.marginTopMd}`}>
         {items.map((item, index) => (
           <li key={index} className={styles.bulletItem}>
