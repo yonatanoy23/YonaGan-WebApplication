@@ -50,7 +50,7 @@ function Hero() {
 function About() {
   return (
     <section id="about" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.h2_hebrew}>מי אנחנו?</h2>
+      <h2 className={styles.h1_hebrew}>מי אנחנו?</h2>
       <p className={styles.textBlock}>
         DuoGami זו אפליקציה
         <br />
@@ -77,8 +77,8 @@ function About() {
 function Background() {
   return (
     <section id="background" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.h2_hebrew}>רקע, מניעים ומטרות</h2>
-      <p className={styles.textBlock}>
+      <h2 className={styles.h1_hebrew}>רקע, מניעים ומטרות</h2>
+      <p className={styles.runningText_hebrew}>
         אמנות האוריגאמי מצריכה
         <br />
         דייקנות רבה. בני אדם רבים
@@ -129,8 +129,8 @@ function TargetAudience() {
 
   return (
     <section id="audience" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.h2_hebrew}>קהל היעד</h2>
-      <p className={styles.textBlock}>
+      <h2 className={styles.h1_hebrew}>קהל היעד</h2>
+      <p className={styles.runningText_hebrew}>
         האפליקציה מיועדת לילדים
         <br />
         ומבוגרים בעלי עניין
@@ -150,7 +150,7 @@ function TargetAudience() {
             <h2 className={`${styles.h2_hebrew} ${styles.marginTopLg}`}>
         מאפיינים<br/>כלליים
       </h2>
-      <ul className={styles.bulletList}>
+      <ul className={`${styles.bulletList} ${styles.small_runningText_hebrew}`}>
         {characteristics.map((item, index) => (
           <li key={index} className={styles.bulletItem}>
             <span>{item}</span>
@@ -176,7 +176,7 @@ function CoreValues() {
       <h2 className={styles.h2_hebrew}>ערכים</h2>
       <br />
       <h2 className={styles.h2_hebrew}>מרכזיים</h2>
-      <ul className={styles.bulletList}>
+      <ul className={`${styles.bulletList} ${styles.small_runningText_hebrew}`}>
         {values.map((item, index) => (
           <li key={index} className={styles.bulletItem}>
             <span>{item}</span>
@@ -225,8 +225,8 @@ function Challenges() {
 
   return (
     <section id="challenges" className={styles.sectionContainer} dir="rtl">
-      <h2 className={styles.h2_hebrew}>בעיות, חששות ושאלות פתוחות</h2>
-      <ul className={`${styles.bulletList} ${styles.marginTopMd}`}>
+      <h2 className={styles.h1_hebrew}>בעיות, חששות ושאלות פתוחות</h2>
+      <ul className={`${styles.bulletList} ${styles.marginTopMd} ${styles.small_runningText_hebrew}`}>
         {items.map((item, index) => (
           <li key={index} className={styles.bulletItem}>
             <span>{item}</span>
