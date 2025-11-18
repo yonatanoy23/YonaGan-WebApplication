@@ -8,19 +8,23 @@ const masada = localFont({
   src: [
     {
       path: "../fonts/Masada-Book.woff2",
-      style: 'Book',
-    },
-    {
-      path: "../fonts/Masada-Medium.woff2",
-      style: 'Medium',
+      weight: '400',
+      style: 'normal',
     },
     {
       path: "../fonts/Masada-Demi.woff2",
-      style: 'Demi',
+      weight: '450', 
+      style: 'normal',
+    },
+    {
+      path: "../fonts/Masada-Medium.woff2",
+      weight: '500', 
+      style: 'normal',
     },
     {
       path: "../fonts/Masada-Bold.woff2",
-      style: 'Bold',
+      weight: '700', 
+      style: 'normal',
     },
   ],
   variable: '--font-masada',
@@ -51,7 +55,7 @@ function About() {
   return (
     <section id="about" className={styles.sectionContainer} dir="rtl">
       <h2 className={styles.h1_hebrew}>מי אנחנו?</h2>
-      <p className={styles.textBlock}>
+      <p className={styles.runningText_hebrew}>
         DuoGami זו אפליקציה
         <br />
         חדשנית ללימוד אוריגמי
